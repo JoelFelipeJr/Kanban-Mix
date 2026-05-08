@@ -117,8 +117,6 @@ VITE_SUPABASE_ANON_KEY=<CHAVE_ANONIMA_SUPABASE>
 
 ## 🏗️ Arquitetura
 
-Ver [DOCUMENTATION.md](./DOCUMENTATION.md) para detalhes completos.
-
 **Estrutura resumida:**
 
 ```
@@ -145,7 +143,11 @@ src/
 
 ## 📖 Documentação Técnica
 
-Para arquitetura detalhada, gerenciamento de estado, banco de dados e guia de desenvolvimento, consulte **[DOCUMENTATION.md](./DOCUMENTATION.md)**.
+Para informações detalhadas sobre gerenciamento de estado, banco de dados e arquitetura do sistema, consulte o código-fonte:
+
+- **`src/components/`** - Implementação dos componentes React
+- **`src/services/`** - Lógica de integração com Supabase e mock data
+- **`src/hooks/`** - Custom hooks para lógica compartilhada
 
 ---
 
