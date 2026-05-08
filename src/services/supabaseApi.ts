@@ -130,7 +130,7 @@ export class SupabaseKanbanService {
       supabase.from('useful_links').select('*').eq('board_id', boardId)
     ]);
     
-    let members = membersResponse.data;
+    let members: Array<Record<string, unknown>> = [];
     if (membersResponse.error) {
       console.warn("Failed to join board_members with profiles. Fetching manually...", membersResponse.error);
       const { data: rawMembers } = await supabase.from('board_members').select('*').eq('board_id', boardId);
@@ -140,10 +140,10 @@ export class SupabaseKanbanService {
         members = rawMembers.map(m => ({
           ...m,
           profiles: profiles?.find(p => p.id === m.user_id) || null
-        })) as any[];
-      } else {
-        members = [];
+        }));
       }
+    } else {
+      members = membersResponse.data || [];
     }
     
     return {
