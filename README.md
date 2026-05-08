@@ -1,7 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 # 📊 Kanban Mix
 
 Um **Kanban board moderno e de alta performance**, similar a Trello/Jira, com autenticação segura, gerenciamento em tempo real via Supabase e interface Dark Mode elegante.
@@ -46,8 +42,8 @@ npm install
 Criar arquivo `.env.production` na raiz do projeto:
 
 ```bash
-VITE_SUPABASE_URL=https://seu-projeto.supabase.co
-VITE_SUPABASE_ANON_KEY=sua-chave-anonima
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
 ```
 
 > **Nota:** Substitua pelos valores reais do seu projeto Supabase (obtém em **Settings > API** no console Supabase)
